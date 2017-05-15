@@ -9,7 +9,7 @@ namespace AltBeaconOrg.BoundBeacon.Distance
     {
         protected override Java.Lang.Object DoInBackground(params Java.Lang.Object[] @params)
         {
-            _DoInBackground((Java.Lang.Void[])@params);
+            DoInBackground((Java.Lang.Void[])@params);
             return null;
         }
     }

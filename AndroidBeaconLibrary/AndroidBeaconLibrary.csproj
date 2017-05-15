@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
@@ -9,16 +9,17 @@
     <OutputType>Library</OutputType>
     <RootNamespace>AndroidBeaconLibrary</RootNamespace>
     <AssemblyName>AndroidBeaconLibrary</AssemblyName>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>AndroidBeaconLibrary</PackageId>
     <PackageVersion>2.10</PackageVersion>
     <Authors>AltBeacon</Authors>
     <Description>Xamarin Bindings for AltBeacon Android Beacon Library</Description>
+    <JavaDocPaths>Javadocs/android-beacon-library-2.10</JavaDocPaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,7 +29,8 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +40,8 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
@@ -49,13 +52,14 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identifier.cs" />
     <Compile Include="ModelSpecificDistanceUpdater.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <None Include="Jars\AboutJars.txt" />
+    <None Include="Javadocs\android-beacon-library-2.10\package-list" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +69,174 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\android-beacon-library-2.10.aar" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Javadocs\android-beacon-library-2.10\allclasses-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\allclasses-noframe.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\constant-values.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\deprecated-list.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\help-doc.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\overview-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\overview-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\overview-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\script.js" />
+    <Content Include="Javadocs\android-beacon-library-2.10\serialized-form.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\stylesheet.css" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-1.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-10.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-11.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-12.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-13.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-14.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-15.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-16.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-17.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-18.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-19.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-2.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-20.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-3.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-4.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-5.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-6.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-7.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-8.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\index-files\index-9.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\AltBeacon.Builder.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\AltBeacon.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\AltBeaconParser.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\AltBeaconParserTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\AltBeaconTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\Beacon.Builder.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\Beacon.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconConsumer.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconData.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconDataNotifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconIntentProcessor.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconManager.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconManager.ServiceNotDeclaredException.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconParser.BeaconLayoutException.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconParser.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconParserTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconTransmitter.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BeaconTransmitterTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BleNotAvailableException.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\BuildConfig.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\BeaconDataFactory.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\DataProviderException.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\NullBeaconDataFactory.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\client\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\AndroidModel.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\CurveFittedDistanceCalculator.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\DistanceCalculator.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\DistanceConfigFetcher.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\ModelSpecificDistanceCalculator.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\ModelSpecificDistanceCalculatorTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\ModelSpecificDistanceUpdater.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\distance\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\GattBeaconTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\Identifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\IdentifierTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\Logger.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\Loggers.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\LoggersTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\LogManager.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\LogManagerTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\VerboseAndroidLoggerTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\logging\WarningAndroidLoggerTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\MonitorNotifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\org\altbeacon\beacon\simulator\BeaconSimulatorTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\org\altbeacon\beacon\simulator\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\org\altbeacon\beacon\simulator\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\org\altbeacon\beacon\simulator\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\powersave\BackgroundPowerSaver.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\powersave\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\powersave\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\powersave\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\R.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\RangeNotifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\Region.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\RegionTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\SBeaconTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\ArmaRssiFilter.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\ArmaRssiFilterTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\BeaconService.BeaconBinder.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\BeaconService.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\BeaconServiceTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\Callback.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\DetectionTracker.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\ExtraDataBeaconTracker.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\ExtraDataBeaconTrackerTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\MonitoringData.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\MonitoringStatus.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\MonitoringStatusTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RangedBeacon.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RangeState.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RangingData.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RangingDataTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RegionMonitoringState.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RssiFilter.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RunningAverageRssiFilter.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\RunningAverageRssiFilterTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\CycledLeScanCallback.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\CycledLeScanner.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\CycledLeScannerForJellyBeanMr2.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\CycledLeScannerForLollipop.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\DistinctPacketDetector.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\DistinctPacketDetectorTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\NonBeaconLeScanCallback.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\ScanFilterUtils.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\scanner\ScanFilterUtilsTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\SettingsData.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\StartRMData.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\Stats.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\service\Stats.Sample.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\simulator\BeaconSimulator.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\simulator\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\simulator\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\simulator\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\simulator\StaticBeaconSimulator.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\BootstrapNotifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\RegionBootstrap.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\startup\StartupBroadcastReceiver.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\EddystoneTelemetryAccessor.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\EddystoneTelemetryAccessorTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\ProcessUtils.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\UrlBeaconUrlCompressor.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\beacon\utils\UrlBeaconUrlCompressorTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\BleAdvertisement.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\BleAdvertisementTest.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\BluetoothCrashResolver.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\BluetoothCrashResolver.UpdateNotifier.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\package-frame.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\package-summary.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\package-tree.html" />
+    <Content Include="Javadocs\android-beacon-library-2.10\org\altbeacon\bluetooth\Pdu.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets')" />
