@@ -7,7 +7,7 @@ namespace AltBeaconOrg.BoundBeacon
     {
         int Java.Lang.IComparable.CompareTo(Java.Lang.Object another)
         {
-            return CompareTo((Identifier)another);
+            return _CompareTo((Identifier)another);
         }
     }
 }
